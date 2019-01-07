@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  naruto-api:
+    build: .
+    expose:
+      - "80"
+    restart: always
+    networks:
+      - rjnet
+
+networks:
+  rjnet:
+    name: rjnewsite_default
